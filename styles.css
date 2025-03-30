@@ -1,0 +1,170 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #111;
+    color: white;
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+nav h1 { color: cyan; }
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: cyan;
+}
+
+/* Profile Section */
+#profile {
+    text-align: center;
+    padding: 80px 20px;
+    background: linear-gradient(135deg, #0f0f0f, #1a1a1a);
+}
+
+.profile-container img {
+    width: 150px;
+    border-radius: 50%;
+}
+
+.profile-container h2 {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.social-buttons a {
+    text-decoration: none;
+    color: white;
+    background: cyan;
+    padding: 8px 15px;
+    margin: 5px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.social-buttons a:hover {
+    background: #00aaaa;
+}
+
+/* Sections */
+section {
+    padding: 50px;
+    text-align: center;
+}
+
+/* Skills Section */
+.skill-bar {
+    background: grey;
+    height: 8px;
+    width: 60%;
+    margin: 10px auto;
+    position: relative;
+    border-radius: 4px;
+}
+
+.fill {
+    background: cyan;
+    height: 100%;
+    border-radius: 4px;
+}
+
+/* Portfolio */
+    .portfolio-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* 2 columns max */
+        gap: 15px;
+        justify-content: center;
+        padding: 20px;
+    }
+
+.portfolio-item {
+    background: #222;
+    padding: 20px;
+    text-align: center;
+    transition: 0.3s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.projectimg{
+    max-width: 50%;
+}
+.portfolio-item:hover {
+    background: cyan;
+    color: black;
+}
+
+#about p{
+    font-size:20px ;
+}
+
+#ee{
+    background-color: #ff4d00;
+    border-radius: 10px;
+    font-size: 23px;
+}
+
+/* Contact Form */
+form input, form textarea {
+    width: 60%;
+    margin: 10px 0;
+    padding: 10px;
+}
+
+button {
+    background: cyan;
+    color: black;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #222;
+}
+
+.contact-info {
+    text-align: center;
+    margin-top: 20px;
+    background: #1a1a1a;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.contact-info h3 {
+    color: cyan;
+}
+
+.contact-info p {
+    margin: 5px 0;
+    font-size: 16px;
+}
+
